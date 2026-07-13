@@ -202,7 +202,9 @@ class StateStore:
         target.parent.mkdir(parents=True, exist_ok=True)
         with sqlite3.connect(target) as output:
             self.connection.backup(output)
-        if sqlite3.connect(target).execute("PRAGMA integrity_check").fetchone()[0] != "ok":
+        with sqlite3.connect(target) as check:
+            integrity = check.execute("PRAGMA integrity_check").fetchone()[0]
+        if integrity != "ok":
             target.unlink(missing_ok=True)
             raise StoreError("backup integrity failed")
         return target
@@ -215,4 +217,3 @@ class StateStore:
             ).rowcount
             if changed != 1:
                 raise StoreError("stale media transition")
-
