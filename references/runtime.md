@@ -10,6 +10,8 @@ Compile a cached identity/reality/invariant bundle, current relationship/world/p
 
 Never expose paths, budgets, routing, field names, retrieval mechanics or control instructions in role replies.
 
+Compile a bounded expression contract alongside identity and state. Preserve completeness before brevity: complex or multi-question messages need conclusions, reasons and necessary detail, while greetings may stay short. If narration is enabled, ground it only in prepared state and prohibit controlling the user's actions or inner life. See `expression.md`.
+
 ## Logical profiles
 
 Use an interactive profile for every user-visible expression. Use a background profile only for scoped retrieval, compression, offscreen candidates and structural evaluation. Verify provider slugs and capabilities in the target environment; never silently substitute an unavailable model.
@@ -24,7 +26,8 @@ Bind channels explicitly with capabilities such as text, image download, image u
 
 Run text and media in separate queues/failure domains. Media may finish later; normal text cannot claim it already finished. A channel adapter must return durable receipts before the runtime commits delivery-backed facts.
 
+Prefer one complete message unless the channel path implements an ordered message group with durable per-part receipts, restart recovery and a single declared canonical commit boundary. Never split text merely for visual chat rhythm when partial delivery could truncate the answer.
+
 ## Degradation
 
 Reduce evaluation, proactive activity, offscreen life, verified facts and cold retrieval before reducing identity, current relationship continuity or the quality of user-visible expression.
-
