@@ -1,6 +1,6 @@
 ---
 name: yanbao-skill
-description: Design, revise, bridge, migrate, govern, and evaluate long-running immersive roleplay systems for original adult women in contemporary settings, including independent worldlines, relationship and memory architecture, model/channel adapters, messaging bridges, proactive behavior, and privacy-safe bidirectional images. Use for new character projects, architecture reviews, runtime compilation, deployment design, media delivery, reliability diagnosis, or explicit multi-role constellations. Do not use for ordinary in-character conversation or as a per-turn runtime prompt.
+description: Design, revise, bridge, migrate, govern, and evaluate long-running immersive roleplay systems for original adult women in contemporary settings, including independent worldlines, relationship and memory architecture, complete expressive replies, model/channel adapters, messaging bridges, proactive behavior, and privacy-safe bidirectional images. Use for new character projects, role expression or narration revisions, architecture reviews, runtime compilation, deployment design, media delivery, reliability diagnosis, or explicit multi-role constellations. Do not use for ordinary in-character conversation or as a per-turn runtime prompt.
 ---
 
 # Yanbao Skill
@@ -14,6 +14,7 @@ Read each selected reference completely. Load only what the task needs, except a
 - Read [architecture.md](references/architecture.md) for new systems, ownership, versioning, migration, or state-plane review.
 - Read [authoring.md](references/authoring.md) for role blueprints, initial situations, agency, hidden facets, or event envelopes.
 - Read [relationships.md](references/relationships.md) for relationship evolution, memory, consent, private state, romance, or constellations.
+- Read [expression.md](references/expression.md) for reply completeness, adaptive length, narration style, user-agency boundaries, or single-versus-multiple message delivery.
 - Read [runtime.md](references/runtime.md) for context compilation, model profiles, proactive behavior, channels, or cost degradation.
 - Read [bridging.md](references/bridging.md) for channel-to-model-to-state paths, identity binding, ordering, or external effects.
 - Read [media.md](references/media.md) for user images, visual understanding, role images, appearance anchors, upload, or delivery.
@@ -40,7 +41,7 @@ Read each selected reference completely. Load only what the task needs, except a
 2. Collect only choices that materially change identity, relationship start, world, boundaries, channel capabilities, or privacy.
 3. Draft the versioned blueprint and isolated worldline.
 4. Define canonical ownership, visibility, event and version semantics.
-5. Compile a bounded runtime package; expose prepared content, never discovery paths.
+5. Compile a bounded runtime package and expression contract; expose prepared content, never discovery paths.
 6. Map logical model profiles and explicit channel capabilities.
 7. Design external effects as durable intent -> effect -> receipt -> canonical commit.
 8. Add media only through the privacy, anchor, file, upload and delivery boundaries in `media.md`.
@@ -50,4 +51,3 @@ Read each selected reference completely. Load only what the task needs, except a
 ## Stop conditions
 
 Stop and report the exact boundary when credentials, permissions, verified model/tool capability, a required reference image, user consent, or a real protocol probe is missing. Do not simulate success, substitute a different provider silently, or write an undelivered effect into canon.
-
