@@ -1,6 +1,6 @@
 ---
 name: yanbao-skill
-description: Design, revise, bridge, migrate, govern, and evaluate long-running immersive roleplay systems for original adult women in contemporary settings, including independent worldlines, relationship and memory architecture, complete expressive replies, model/channel adapters, messaging bridges, proactive behavior, and privacy-safe bidirectional images. Use for new character projects, role expression or narration revisions, architecture reviews, runtime compilation, deployment design, media delivery, reliability diagnosis, or explicit multi-role constellations. Do not use for ordinary in-character conversation or as a per-turn runtime prompt.
+description: Design, implement, scaffold, test, deploy, revise, bridge, migrate, govern, and evaluate long-running immersive roleplay systems for original adult women in contemporary settings, including independent worldlines, relationship and memory architecture, complete expressive replies, model/channel adapters, messaging bridges, proactive behavior, privacy-safe bidirectional images, and a safe disarmed Python project template. Use for new character projects, coding or deployment, role expression revisions, architecture reviews, runtime compilation, media delivery, reliability diagnosis, or multi-role constellations. Do not use for ordinary in-character conversation or as a per-turn runtime prompt.
 ---
 
 # Yanbao Skill
@@ -20,6 +20,11 @@ Read each selected reference completely. Load only what the task needs, except a
 - Read [media.md](references/media.md) for user images, visual understanding, role images, appearance anchors, upload, or delivery.
 - Read [reliability.md](references/reliability.md) for state machines, idempotency, receipts, recovery, retention, or rollback.
 - Read [failure-patterns.md](references/failure-patterns.md) when diagnosing a bridge, model, Schema, tool, upload, or delivery failure.
+- Read [implementation.md](references/implementation.md) for build, scaffold, implement, deploy, release, or rollback requests.
+- Read [project-structure.md](references/project-structure.md) for code layout, module boundaries, dependency direction, or template specialization.
+- Read [persistence.md](references/persistence.md) for database schemas, migrations, transactions, inbox/outbox/media jobs, backup, or recovery.
+- Read [adapters.md](references/adapters.md) for model, channel, image, configuration, capability, or real protocol work.
+- Read [testing.md](references/testing.md) for offline suites, crash injection, template smoke tests, forward tests, or live release probes.
 - Read [evaluation.md](references/evaluation.md) for testing and release gates.
 
 ## Preserve the system
@@ -47,6 +52,8 @@ Read each selected reference completely. Load only what the task needs, except a
 8. Add media only through the privacy, anchor, file, upload and delivery boundaries in `media.md`.
 9. Run structural, behavioral, longitudinal, protocol and recovery checks in `evaluation.md`.
 10. Publish prospectively. Require explicit patch, retcon, migration, fork, rollback, or compatibility routing for established systems.
+
+For implementation work, continue only after an approved specification and written plan: inspect the target, copy `assets/project-template` without Git metadata, specialize project-owned blueprint/configuration, implement adapters, run offline tests and real probes, back up state, start disarmed, then perform explicit channel acceptance.
 
 ## Stop conditions
 
