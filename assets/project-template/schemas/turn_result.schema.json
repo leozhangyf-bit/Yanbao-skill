@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["reply_text", "candidate_events"],
+  "properties": {
+    "reply_text": {"type": "string", "minLength": 1, "maxLength": 4000},
+    "candidate_events": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {"type": "string", "minLength": 1, "maxLength": 1000}
+    }
+  }
+}
+
