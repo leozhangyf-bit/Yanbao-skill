@@ -37,6 +37,8 @@ role motivation or validated media intent
 
 Role motivation never equals permission or delivery. Channel adapters expose capabilities and typed receipts. The runtime chooses behavior when a capability is absent; it never pretends support.
 
+A committed private life event may create a proactive intent. Compile that intent through the interactive expression profile, stage one complete message, deliver it idempotently, persist the receipt and only then commit a disclosure event. Sending failure leaves the private event intact and user knowledge unchanged.
+
 ## Ordering and concurrency
 
 Serialize canonical turns per role instance. Separate slow media workers from text workers. Use conditional claims so only one worker owns a stage. Cross-channel events share one canonical ordering without letting one channel session become the source of truth.
@@ -44,4 +46,3 @@ Serialize canonical turns per role instance. Separate slow media workers from te
 ## Security and observability
 
 Keep credentials in provider profiles or secret stores, never prompts, events or repositories. Production state stores bounded error classes; a privileged diagnostic mode may capture raw protocol output locally with redaction and short retention.
-

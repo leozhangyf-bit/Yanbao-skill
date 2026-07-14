@@ -26,6 +26,7 @@ Own CLI parsing, dependency assembly, service lifecycle and operator commands. D
       ports.py
       schema.sql
       store.py
+      life.py
       service.py
       cli.py
     tests/
@@ -40,9 +41,9 @@ Blueprints, anchors, databases, logs and local configuration belong to the concr
 - contracts.py uses the standard library only.
 - ports.py depends on contracts.
 - store.py implements persistence without importing model/channel implementations.
-- service.py depends on ports and store interfaces.
+- life.py owns deterministic wake eligibility and imports domain contracts only.
+- service.py depends on ports, wake policy and store interfaces; interactive turns and private life advances remain separate workflows.
 - cli.py assembles concrete dependencies and exposes safe operator commands.
 - Provider-specific modules may depend inward; inward modules never import them.
 
 Keep files focused. Split media, runtime compilation and provider implementations when they become non-trivial rather than growing one service module.
-

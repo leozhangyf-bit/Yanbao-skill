@@ -62,9 +62,14 @@ def main(argv: list[str] | None = None) -> int:
         config.write_text(
             json.dumps(
                 {
-                    "version": 1,
+                    "version": 2,
                     "model_adapter": "unconfigured",
+                    "life_adapter": "unconfigured",
                     "channel_adapter": "unconfigured",
+                    "life_enabled": False,
+                    "external_stimuli_enabled": False,
+                    "daily_wake_opportunities": 2,
+                    "max_proactive_per_day": 2,
                     "media_enabled": False,
                 },
                 indent=2,
@@ -123,4 +128,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

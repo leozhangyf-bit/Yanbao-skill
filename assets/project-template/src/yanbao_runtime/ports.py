@@ -2,7 +2,13 @@ from __future__ import annotations
 
 from typing import Protocol
 
-from .contracts import DeliveryReceipt, InboundMessage, TurnProposal
+from .contracts import (
+    DeliveryReceipt,
+    InboundMessage,
+    LifeAdvanceProposal,
+    LifeAdvanceRequest,
+    TurnProposal,
+)
 
 
 class ModelPort(Protocol):
@@ -14,3 +20,6 @@ class ChannelPort(Protocol):
         self, chat_id: str, text: str, idempotency_key: str
     ) -> DeliveryReceipt: ...
 
+
+class LifePort(Protocol):
+    async def advance(self, request: LifeAdvanceRequest) -> LifeAdvanceProposal | None: ...

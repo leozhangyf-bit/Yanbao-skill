@@ -2,9 +2,11 @@
 
 ## Offline suites
 
-Test strict contracts and Schema, blueprint permissions, evidence-linked relationship changes, runtime budgets and leakage, inbox/outbox idempotency, media transitions, configuration migration, backup integrity, path escape, metadata stripping, retention and text/media isolation.
+Test strict contracts and Schema, blueprint permissions, evidence-linked relationship changes, runtime budgets and leakage, inbox/outbox idempotency, life-wake idempotency, private-event commits, proactive disclosure receipts, media transitions, configuration migration, backup integrity, path escape, metadata stripping, retention and text/media isolation.
 
 Use fake model, fake channel and fake clock. Inject crashes after every external boundary: generation, file copy, upload, resource receipt, send, message receipt, caption and commit.
+
+Run a 30-day fake-clock life suite with two scheduled wakes per day. Prove that ineligible wakes make no model call, eligible wakes make no more than one, long gaps coalesce, roles and supporting actors act without user advice, every event has a causal basis, repetitive routine-only events fail, private facts do not leak, bounded deception remains reconcilable, and proactive delivery never exceeds its configured daily cap.
 
 ## Template smoke test
 
@@ -25,4 +27,3 @@ Use fresh isolated contexts for:
 4. crash recovery from a persisted upload or delivery receipt.
 
 Publish only after skill validation, template tests, privacy scan, forward tests and remote commit verification pass.
-

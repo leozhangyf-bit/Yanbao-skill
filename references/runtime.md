@@ -18,7 +18,11 @@ Use an interactive profile for every user-visible expression. Use a background p
 
 ## Lazy life and proactive contact
 
-Anchor to wall-clock time and materialize zero to a few plausible slices only when reconnection or conversation requires them. Keep role motivation separate from infrastructure eligibility, rate limits, quiet hours, unanswered silence, cost and idempotency.
+Anchor to wall-clock time and persist at least two wake opportunities per enabled role per local day. Evaluate deadlines, pressure, actor action times and the agency floor without a model first. An eligible wake may make at most one background call and materialize at most one causal slice. Coalesce missed wakes after long gaps instead of backfilling days.
+
+Keep role motivation separate from infrastructure eligibility, rate limits, quiet hours, unanswered silence, cost and idempotency. Default to zero minimum proactive messages and no more than two deliveries per local day. After an unanswered delivery, permit another only for a new committed material consequence; never send reminders or paraphrases.
+
+Keep external stimuli behind an explicit port and disabled by default. Fictional goals, actors and consequences must sustain the worldline without network access.
 
 ## Channels and workers
 

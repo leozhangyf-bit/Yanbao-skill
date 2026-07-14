@@ -11,11 +11,11 @@ Use this workflow only when the user asks to build, implement, scaffold, connect
 3. Write a task-level implementation plan with exact files, contracts and tests.
 4. Copy assets/project-template into an approved empty or reviewed target. Never copy its Git metadata.
 5. Rename the generic package only when the project naming convention requires it.
-6. Create project-owned blueprint, appearance anchor metadata and configuration schema. Keep them outside this global skill.
-7. Implement provider adapters behind the template ports. Probe capabilities before enabling them.
+6. Create project-owned blueprint, confirmed sparse life skeleton, appearance anchor metadata and configuration schema. Keep them outside this global skill. Leave life progression disabled until the initial goals, threads and supporting actors are confirmed.
+7. Implement interactive, life, provider and optional external-stimulus adapters behind the template ports. Probe capabilities before enabling them; keep external stimuli disabled by default.
 8. Run offline contract, persistence, recovery, privacy and concurrency tests.
 9. Run real protocol probes without writing administrative traffic into role canon.
-10. Back up canonical data, verify integrity, start disarmed, then arm only with explicit confirmation.
+10. Back up canonical data, verify integrity, start disarmed, then arm text and life progression only with explicit confirmation.
 11. Perform channel acceptance, record the release and preserve rollback instructions.
 
 ## Safety defaults
@@ -25,4 +25,3 @@ The template is not production-ready until real adapters and probes pass. It sta
 ## Completion
 
 A project is complete only when canonical state ownership, runtime compilation, provider capability, durable receipts, recovery, privacy, backup, rollback and live acceptance are verified. Model prose cannot replace a file, provider receipt or channel receipt.
-

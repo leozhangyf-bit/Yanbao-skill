@@ -1,4 +1,4 @@
 interface:
   display_name: "Yanbao Skill"
-  short_description: "设计、实现并交付支持渠道桥接与双向图片的长期原创成年角色系统"
-  default_prompt: "使用 $yanbao-skill 从头设计、实现、测试并交付一个独立的长期角色项目。"
+  short_description: "构建有独立人生、配角动机与可靠桥接的长期沉浸式角色系统"
+  default_prompt: "使用 $yanbao-skill 设计并实现一个拥有持续独立生活、主动故事与可靠关系记忆的长期角色项目。"

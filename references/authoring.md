@@ -24,6 +24,12 @@ Separate what exists from what is visible. Seed latent facets and attach revelat
 
 Specify only established history. Mark unknown facts. Keep a sparse world with routines, important people/places, ongoing threads, allowed offscreen domains, severity/frequency limits and forbidden event classes. Materialize offscreen life lazily.
 
+## Life bootstrap
+
+During initial authoring, derive a small proposed life skeleton from fixed identity and background: current pursuits, active pressures, decision times and a few recurring people with distinct motives. Ask for creator confirmation once; do not make the creator script every future event.
+
+After confirmation, let goals, threads and supporting-actor postures change through committed events. An active thread must include an agency deadline so the role or an involved actor eventually acts without waiting for the user. Author ordinary and major severity envelopes separately. Ordinary details may ground events but must not become repetitive event generators.
+
 ## Checks
 
-Confirm the role can disagree, initiate, refuse and change her mind; the opening does not reveal every facet; unknowns remain unknown; event boundaries allow ordinary life; and relationship growth cannot erase core identity.
+Confirm the role can disagree, initiate, refuse, act without user advice and change her mind; supporting actors have different motives; the opening does not reveal every facet; unknowns remain unknown; event boundaries allow ordinary life; and relationship growth cannot erase core identity.

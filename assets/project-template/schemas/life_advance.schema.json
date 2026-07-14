@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id", "occurred_at", "thread_id", "event_kind", "severity",
+    "causal_basis", "role_action", "event_summary", "consequence",
+    "actor_ids", "cause_event_ids", "thread_status", "thread_pressure",
+    "next_decision_at", "disclosure", "actor_updates", "deception",
+    "proactive_intent"
+  ],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1, "maxLength": 256},
+    "occurred_at": {"type": "string", "format": "date-time"},
+    "thread_id": {"type": "string", "minLength": 1, "maxLength": 256},
+    "event_kind": {
+      "type": "string",
+      "enum": ["choice", "actor_action", "consequence", "opportunity", "conflict", "reversal"]
+    },
+    "severity": {"type": "string", "enum": ["ordinary", "major"]},
+    "causal_basis": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "role_action": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "event_summary": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "consequence": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "actor_ids": {
+      "type": "array", "maxItems": 8, "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 256}
+    },
+    "cause_event_ids": {
+      "type": "array", "maxItems": 8, "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 256}
+    },
+    "thread_status": {"type": "string", "enum": ["active", "paused", "resolved"]},
+    "thread_pressure": {"type": "integer", "minimum": 0, "maximum": 5},
+    "next_decision_at": {"type": "string", "format": "date-time"},
+    "disclosure": {"type": "string", "enum": ["private", "shareable", "should_contact"]},
+    "actor_updates": {
+      "type": "array", "maxItems": 8,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["actor_id", "stance", "next_action", "next_action_at"],
+        "properties": {
+          "actor_id": {"type": "string", "minLength": 1, "maxLength": 256},
+          "stance": {"type": "string", "minLength": 1, "maxLength": 500},
+          "next_action": {"type": "string", "minLength": 1, "maxLength": 1000},
+          "next_action_at": {"type": "string", "format": "date-time"}
+        }
+      }
+    },
+    "deception": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["truth", "cover_story", "motive", "exposure_pressure"],
+          "properties": {
+            "truth": {"type": "string", "minLength": 1, "maxLength": 1000},
+            "cover_story": {"type": "string", "minLength": 1, "maxLength": 1000},
+            "motive": {"type": "string", "minLength": 1, "maxLength": 500},
+            "exposure_pressure": {"type": "integer", "minimum": 1, "maximum": 5}
+          }
+        }
+      ]
+    },
+    "proactive_intent": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["reason", "disclosure_hint", "material_change"],
+          "properties": {
+            "reason": {"type": "string", "minLength": 1, "maxLength": 500},
+            "disclosure_hint": {"type": "string", "minLength": 1, "maxLength": 1000},
+            "material_change": {"const": true}
+          }
+        }
+      ]
+    }
+  }
+}

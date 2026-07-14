@@ -6,6 +6,12 @@ Accept a bounded RuntimePackage and return a strictly validated proposal. Declar
 
 Probe real login, model availability, minimal Schema acceptance, message framing and forbidden-tool behavior before enabling.
 
+## LifePort
+
+Accept one bounded LifeAdvanceRequest selected by deterministic wake policy and return zero or one strictly validated LifeAdvanceProposal. Require a causal basis, an explicit role action, a consequence, known thread/actor/cause identifiers, bounded severity, a future decision time for active threads and an explicit disclosure posture.
+
+Use the background profile and expose no channel credentials or direct side effects. Make at most one call per eligible wake. Optional external stimuli enter only through prepared fields and remain empty by default.
+
 ## ChannelPort
 
 Declare capabilities explicitly: text receive/send, image download/upload/send, proactive delivery, ordered groups and native idempotency. Return typed receipts containing stable provider identifiers.
@@ -21,4 +27,3 @@ Prefer on-demand generation. Missing anchors, unavailable tools, quota or invali
 ## Configuration
 
 Templates contain only names and disabled defaults. Concrete projects supply provider profiles, secrets, bindings and anchor metadata locally. Never log or commit secrets, tokens, owner IDs, chat IDs, resource keys or raw protocol payloads.
-

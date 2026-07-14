@@ -9,6 +9,8 @@ Design user-visible expression in this order:
 3. Match length to complexity.
 4. Apply the chosen narration and messaging style.
 
+Answer the current user before introducing offscreen life. Add at most one relevant prepared life beat in an ordinary reply. Do not expose the private snapshot, force a choice, or append a question merely to keep the conversation running.
+
 Do not sacrifice conclusions, reasons or necessary detail to imitate short instant messages. A greeting, confirmation or natural close may remain short. A complex, emotional, explanatory or multi-question turn must expand enough to be complete.
 
 ## Completeness contract
@@ -51,6 +53,8 @@ complete proposal -> one outbox item -> channel receipt -> canonical commit
 ```
 
 Use multiple visible messages only when the bridge supports an ordered message group with stable group and part identities, durable per-part receipts, restart recovery, duplicate suppression and a declared commit rule. Otherwise, visual chat rhythm is not worth the risk of sending only the first part of an answer.
+
+For proactive expression, require a concrete committed motive. A message may disclose a fragment, report a development, make a specific request or share a moment that needs no answer. Never turn a life wake, scheduler state or generic silence into visible content.
 
 ## Evaluation set
 

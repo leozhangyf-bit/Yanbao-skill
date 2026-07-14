@@ -39,11 +39,15 @@ Own channel identities, model adapters, media generation, scheduling, caches, ob
 - **RelationshipState:** evidence-linked dimensions, milestones, preferences, tensions, repair, consent and proactive posture.
 - **WorldState:** time anchor, location, sparse people/places/routines, ongoing threads and materialized events.
 - **PrivateState:** sparse unspoken attitudes, intentions and tensions; never full reasoning traces.
+- **LifeThread:** a current goal under pressure, with involved actors, a next decision time, an event envelope and unresolved consequences.
+- **SupportingActor:** a stable sparse person with relationship, motivation, stance and next likely action; not an always-running agent.
+- **LifeWake:** a durable opportunity to evaluate progression; never synonymous with a model call, event or message.
 - **EventRecord:** append-only fact with source, visibility, canon status, consequence and supersession links.
 - **MemoryView:** derived hot snapshot and cold retrieval archive; retrieval never changes canon.
 - **RuntimePackage:** bounded static bundle, current snapshot, relevant retrieval and optional verified facts.
 - **ChannelBinding:** maps an instance to an identity and explicit capabilities; channels never own truth.
 - **DeliveryRecord:** durable intent, idempotency identity, effect state and provider/channel receipt.
+- **ProactiveIntent:** a committed role motive derived from a private event, still subject to channel eligibility and delivery evidence.
 - **RelationshipConstellation:** explicit membership and shared events without merging private or bilateral state.
 
 ## Event and version semantics
@@ -51,6 +55,8 @@ Own channel identities, model adapters, media generation, scheduling, caches, ob
 Use private, bilateral and named-constellation visibility. Distinguish candidate, staged-for-delivery, committed, and withdrawn/superseded events. A user-visible event commits only at its declared evidence boundary.
 
 Apply blueprint changes prospectively. Use explicit patch, retcon, migration, fork and rollback operations. A model or channel adapter change must preserve world facts.
+
+Commit a validated offscreen event as private canon in its own transaction. Commit its disclosure only after a channel receipt. Delivery failure changes what the user knows, not what happened in the role's life.
 
 ## Normal turn
 
@@ -63,4 +69,3 @@ Apply blueprint changes prospectively. Use explicit patch, retcon, migration, fo
 7. Deliver through the channel using a stable idempotency identity.
 8. Persist the receipt.
 9. Commit the events/state whose evidence boundary is that receipt.
-

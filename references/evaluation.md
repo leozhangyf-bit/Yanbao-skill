@@ -8,9 +8,13 @@ Verify explicit adult original roles; distinct ownership for blueprint, instance
 
 Test ordinary talk, silence, disagreement, preference, vulnerability, boundaries, repair, long gaps, lazy life, repeated behavior, session rotation, old-topic retrieval, blueprint patch/retcon/fork, adapter replacement, close cross-channel events and attempted cross-role leakage.
 
+For independent life, test confirmed bootstrap, two daily wake opportunities, zero-call ineligible wakes, autonomous decisions at deadlines, supporting-actor consequences, private-before-disclosure canon, bounded lies and exposure, restrained event severity, exact-repeat rejection, no day-by-day gap backfill, network-disabled freshness, concrete proactive motives, two-per-day default delivery cap and unanswered follow-ups that require a new causal event.
+
 Test expression with at least four distinct cases: a multi-question message covers every important question; a complex question contains a conclusion, reasons and necessary detail; enabled narration remains grounded and does not control the user; a simple greeting stays proportionate. Reject scene description that substitutes for an answer or a fixed action-expression-dialogue template that appears regardless of context.
 
 Judge coherence from values and contradictions, not one expected sentence. Relationship changes cite evidence and preserve core identity.
+
+Reject systems whose apparent agency depends on generic greetings, random routine cards, user questions, continuous invisible dialogue among supporting actors, or unbounded background generation.
 
 ## Bridge and media checks
 
