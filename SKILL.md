@@ -1,6 +1,6 @@
 ---
 name: yanbao-skill
-description: Design, implement, scaffold, test, deploy, revise, bridge, migrate, govern, and evaluate long-running immersive roleplay systems for original adult women in contemporary settings, including independent fictional offscreen lives, autonomous goals and supporting characters, sparse time progression, relationship and memory architecture, proactive storytelling, complete expressive replies, model/channel adapters, messaging bridges, privacy-safe bidirectional images, and a safe disarmed Python project template. Use for new character projects, passive-companion diagnosis, life-simulation or proactive-behavior design, coding or deployment, role expression revisions, architecture reviews, runtime compilation, media delivery, reliability diagnosis, or multi-role constellations. Do not use for ordinary in-character conversation or as a per-turn runtime prompt.
+description: Design, implement, scaffold, test, deploy, revise, bridge, migrate, govern, and evaluate long-running immersive roleplay systems for original adult women in contemporary settings, including independent fictional offscreen lives, autonomous goals and supporting characters, sparse time progression, relationship and memory architecture, proactive storytelling, complete expressive replies, adaptive reply budgets, model/channel adapters, reliable Windows/Feishu multi-paragraph delivery, privacy-safe bidirectional images, and a safe disarmed Python project template. Use for new character projects, passive-companion diagnosis, life-simulation or proactive-behavior design, coding or deployment, role expression revisions, architecture reviews, runtime compilation, media delivery, reliability diagnosis, or multi-role constellations. Do not use for ordinary in-character conversation or as a per-turn runtime prompt.
 ---
 
 # Yanbao Skill
@@ -16,6 +16,7 @@ Read each selected reference completely. Load only what the task needs, except a
 - Read [life-simulation.md](references/life-simulation.md) for independent offscreen life, goals, supporting actors, sparse wakes, consequences, privacy, deception, disclosure, or proactive motives.
 - Read [relationships.md](references/relationships.md) for relationship evolution, memory, consent, private state, romance, or constellations.
 - Read [expression.md](references/expression.md) for reply completeness, adaptive length, narration style, user-agency boundaries, or single-versus-multiple message delivery.
+- Read [feishu-text-delivery.md](references/feishu-text-delivery.md) for every new character project's expression-and-delivery design, and whenever choosing saturated reply budgets, connecting Windows to Feishu, diagnosing first-paragraph truncation, or verifying that provider-visible text matches the final model draft. Treat its 300–500 normal and 100–200 closing budgets as an optional user-approved profile, not a universal character default.
 - Read [runtime.md](references/runtime.md) for context compilation, model profiles, proactive behavior, channels, or cost degradation.
 - Read [bridging.md](references/bridging.md) for channel-to-model-to-state paths, identity binding, ordering, or external effects.
 - Read [media.md](references/media.md) for user images, visual understanding, role images, appearance anchors, upload, or delivery.
@@ -49,14 +50,14 @@ Read each selected reference completely. Load only what the task needs, except a
 3. Draft the versioned blueprint, sparse life skeleton and isolated fictional worldline; confirm the initial goals, active threads and recurring actors before enabling life progression.
 4. Define canonical ownership, visibility, private-event commit, disclosure, event and version semantics.
 5. Define persistent wakes, deterministic eligibility and a bounded life-advance proposal. Default to two wake opportunities per local day, zero or one material slice per eligible wake, and no daily backfill.
-6. Compile a bounded runtime package and expression contract; expose prepared content, never discovery paths.
-7. Map logical interactive/background profiles and explicit channel capabilities. Keep optional real-world stimuli disabled unless the project explicitly enables them.
+6. Compile a bounded runtime package and role-specific expression contract; expose prepared content, never discovery paths. Choose one explicit length metric and budget profile. Preserve the reusable content-density and rewrite rules in `feishu-text-delivery.md` without copying another character's voice, pet names, intimacy or joke style.
+7. Map logical interactive/background profiles and explicit channel capabilities. For Windows/Feishu text, use the ASCII-safe single-JSON-frame adapter and its multiline Unicode tests from `feishu-text-delivery.md`. Keep optional real-world stimuli disabled unless the project explicitly enables them.
 8. Design external effects as durable intent -> effect -> receipt -> canonical commit. Do not require a channel receipt for a validated private offscreen event.
 9. Add media only through the privacy, anchor, file, upload and delivery boundaries in `media.md`.
 10. Run structural, behavioral, longitudinal, cost, protocol and recovery checks in `evaluation.md`.
 11. Publish prospectively. Require explicit patch, retcon, migration, fork, rollback, or compatibility routing for established systems.
 
-For implementation work, continue only after an approved specification and written plan: inspect the target, copy `assets/project-template` without Git metadata, specialize project-owned blueprint/configuration, implement adapters, run offline tests and real probes, back up state, start disarmed, then perform explicit channel acceptance.
+For implementation work, continue only after an approved specification and written plan: inspect the target, copy `assets/project-template` without Git metadata, retain its project-local delivery-method document, specialize project-owned blueprint/configuration and expression budget, implement adapters, run offline tests and real probes, back up state, start disarmed, then perform explicit channel acceptance.
 
 ## Stop conditions
 
