@@ -21,6 +21,8 @@ Own CLI parsing, dependency assembly, service lifecycle and operator commands. D
 ## Default tree
 
     schemas/
+    docs/
+      飞书多段中文回复完整交付方法论.md
     src/<project_package>/
       contracts.py
       ports.py
@@ -33,6 +35,8 @@ Own CLI parsing, dependency assembly, service lifecycle and operator commands. D
     runtime_profile/
     assets/<role-name>/
     data/
+
+The template's delivery-method document is copied into each concrete project so expression budgets and channel framing stay reviewable during specialization. Keep it generic; put role-specific style and chosen budgets in the project's versioned expression profile.
 
 Blueprints, anchors, databases, logs and local configuration belong to the concrete project, never the skill template.
 
